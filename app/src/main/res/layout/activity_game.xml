@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/text_diff"
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Difficulty"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_casual"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/largestandar"
+        android:text="Casual"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_diff" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_hard"
+        android:layout_marginTop="30dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/largestandar"
+        android:text="Hard"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_casual" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_nightmare"
+        android:layout_marginTop="30dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/largestandar"
+        android:text="Nightmare"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_hard" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_nightmare"
+        app:srcCompat="@drawable/diffimg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
